@@ -6,6 +6,8 @@ Assessment Requirements
    you will store it in the variable you created in step 1
 3. Your listNFTs() function will print all of your NFTs metadata to the console (i.e. console.log("Name: " + someNFT.name))
 4. For good measure, getTotalSupply() should return the number of NFT's you have created
+
+
 Procedure:-
 ---->so for the first task i have created the an array named as NFTs
 ---->Then according to the objective i have created the function and named as minNFT and then passed some parameters for the metadata like NAME,ARTIST,DESCRIPTION,DATECREATED
