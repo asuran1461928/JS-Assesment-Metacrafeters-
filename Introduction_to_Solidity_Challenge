@@ -1,0 +1,33 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract SimpleContract {
+    int256 private age;
+    bool private isStudent;
+    string private name;
+    address private walletAddress;
+
+    function setAll(int256 _age, bool _isStudent, string memory _name, address _walletAddress) public returns (int256, bool, string memory, address) {
+        age = _age;
+        isStudent = _isStudent;
+        name = _name;
+        walletAddress = _walletAddress;
+        return (age, isStudent, name, walletAddress);
+    }
+
+    function getAge() public view returns (int256) {
+        return age;
+    }
+
+    function getIsStudent() public view returns (bool) {
+        return isStudent;
+    }
+
+    function getName() public view returns (string memory) {
+        return name;
+    }
+
+    function getWalletAddress() public view returns (address) {
+        return walletAddress;
+    }
+}
